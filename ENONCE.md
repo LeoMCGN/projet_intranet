@@ -179,7 +179,7 @@ birthdate   -   Date de naissance
 city        -   Ville où le collaborateur travaille
 country     -   Pays où le collaborateur travaille
 photo       -   Une URL valide vers une image en ligne
-category    -   Service dans lequel travaille le collaborateur ("Marketing", "Client" ou "Technique")
+service     -   Service dans lequel travaille le collaborateur ("Marketing", "Client" ou "Technique")
 isAdmin     -   Le collaborateur est un administrateur de la platforme (Boolean)
 ```
 
