@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import "./form.css";
+import "./css/form.css";
+import { Link } from "react-router-dom";
 
 function Form() {
   return (
     <div>
       <section>
-        <div className="two alt-two">
+        <div className="title title-span">
           <h1>
             Intranet
             <span>Bienvenue sur la page de connexion</span>
@@ -14,23 +15,25 @@ function Form() {
       </section>
 
       <section className="container">
-        <div class="login-page">
-          <div class="form">
-            <form class="register-form">
+        <div className="login-page">
+          <div className="form">
+            <form className="register-form">
               <input type="text" placeholder="Nom" />
               <input type="password" placeholder="Mot de passe" />
               <input type="email" placeholder="Email" />
               <button>Créer</button>
-              <p class="message">
+              <p className="message">
                 Déjà un compte ? <a href="#">Connecter vous.</a>
               </p>
             </form>
-            <form class="login-form">
+            <form className="login-form">
               <input type="email" placeholder="Email" />
-              <input type="password" placeholder="Mot de passe" />
-              <button type="submit">Se connecter</button>
-              <p class="message">
-                Pas de compte? <a href="#">Demander vos accès à la secrétaire.</a>
+              <input type="password" placeholder="Mot de passe" className="input2" />
+              <Link to={`/sayhello/`} className="btn">
+                Se connecter
+              </Link>
+              <p className="message">
+                Pas de compte? <span>Demander vos accès à la secrétaire.</span>
               </p>
             </form>
           </div>

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./navbar.css";
+import { Link } from "react-router-dom";
+import "./css/navbar.css";
 
 function Navbar() {
   return (
@@ -7,10 +8,13 @@ function Navbar() {
       <nav>
         <ul>
           <li>
-            <a href="#">Accueil</a>
+            <Link to={`/main/`}>Déconnexion </Link>
           </li>
           <li>
-            <a href="#">Login</a>
+            <Link to={`/sayhello/`}>Dire bonjour!</Link>
+          </li>
+          <li>
+            <Link to={`/list/`}>Liste des salariés </Link>
           </li>
         </ul>
       </nav>
