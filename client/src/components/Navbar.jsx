@@ -2,8 +2,6 @@ import { useState } from "react";
 import "./navbar.css";
 
 function Navbar() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
       <nav>
@@ -16,15 +14,6 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-
-      <section>
-        <div className="two alt-two">
-          <h1>
-            Intranet
-            <span>Bienvenue sur l'intranet</span>
-          </h1>
-        </div>
-      </section>
     </div>
   );
 }
