@@ -17,9 +17,13 @@ function SayHello() {
                 <input type="button" className="btn explore" value="leo.macaigne@gmail.com" />
               </div>
               <p className="bio">
-                Mount Everest, also known in Nepal as Sagarmāthā and in Tibet as Chomolungma, is Earth's highest mountain. It is located in the Mahalangur mountain range in Nepal and Tibet. Its peak
-                is 8,848 metres (29,029 ft) above sea level. The international border between China (Tibet Autonomous Region) and Nepal runs across Everest's precise summit point.
+                Mount Everest, also known in Nepal as Sagarmāthā and in Tibet as Chomolungma, is Earth's highest mountain. It is located in the Mahalangur mountain range in Nepal and Tibet.
               </p>
+              <div className="center-btn">
+                <button type="submit" className="randomhello">
+                  Dire bonjour à quelqu'un d'autre
+                </button>
+              </div>
             </figcaption>
           </figure>
         </div>

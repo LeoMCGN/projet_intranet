@@ -27,20 +27,25 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  margin: 2px;
 }
 
-nav ul li a {
-  padding: 18px;
-  font-family: "Open Sans";
+nav ul li button {
+  padding: 15px;
+  margin: 2px;
   text-transform: uppercase;
   color: rgba(2, 15, 49, 0.5);
   font-size: 18px;
+  outline: none;
+  border: none;
   text-decoration: none;
   display: block;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-nav ul li a:hover {
+nav ul li button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.4);
   color: rgba(0, 35, 122, 0.7);
 }

@@ -1,6 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "./css/navbar.css";
+
+function Logout() {
+  localStorage.clear();
+  window.location = "/";
+}
 
 function Navbar() {
   return (
@@ -8,13 +12,13 @@ function Navbar() {
       <nav>
         <ul>
           <li>
-            <Link to={`/main/`}>Déconnexion </Link>
+            <button onClick={Logout}>Déconnexion </button>
           </li>
           <li>
-            <Link to={`/sayhello/`}>Dire bonjour!</Link>
+            <button>Dire bonjour!</button>
           </li>
           <li>
-            <Link to={`/list/`}>Liste des salariés </Link>
+            <button>Liste des salariés </button>
           </li>
         </ul>
       </nav>
