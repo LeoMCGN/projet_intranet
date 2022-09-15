@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./css/navbar.css";
 
 function Logout() {
@@ -12,13 +13,19 @@ function Navbar() {
       <nav>
         <ul>
           <li>
-            <button onClick={Logout}>Déconnexion </button>
+            <button onClick={Logout} className="nav-link">
+              Déconnexion{" "}
+            </button>
           </li>
           <li>
-            <button>Dire bonjour!</button>
+            <Link to={"/sayhello/"} className="nav-link">
+              Dire bonjour!
+            </Link>
           </li>
           <li>
-            <button>Liste des salariés </button>
+            <Link to={"/list/"} className="nav-link">
+              Liste des salariés{" "}
+            </Link>
           </li>
         </ul>
       </nav>

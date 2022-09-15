@@ -32,7 +32,6 @@ function Login() {
 
   return (
     <div>
-      <Navbar />
       <section>
         <div className="title title-span">
           <h1>

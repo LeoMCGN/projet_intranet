@@ -1,57 +1,41 @@
-import { useState } from "react";
-import "./css/list.css";
+import { useState, useEffect } from "react";
+import APIService from "../services/APIService";
+import Card from "./Card";
 import Navbar from "./navbar";
 
 function List() {
+  const [collaborators, setCollaborators] = useState([]);
+
+  const getAllCollaborator = async () => {
+    const data = await APIService.getAllCollaborators();
+
+    setCollaborators(data);
+  };
+
+  useEffect(() => {
+    getAllCollaborator();
+  }, []);
   return (
     <div>
       <Navbar />
-      <div className="list-row">
-        <div className="list-container">
-          <div className="activite">Marketing</div>
-          <img src={`https://www.benouaiche.com/wp-content/uploads/2018/12/homme-medecine-chirurgie-esthetique-dr-benouaiche-paris.jpg`} alt="photo de profil" />
-          <div className="detail">
-            <h2>Léo Macaigne</h2>
-            <small>Âge: 21 ans</small> <br />
-            <small>Ville: Saint-Maur-des-Fossés</small> <br />
-            <small>Mail : leo.macaigne@gmail.com</small> <br />
-            <small>Tel : 06 95 16 86 61</small>
-          </div>
-          <div>
-            <button className="btn-load-more">Contacter</button>
-          </div>
-        </div>
-
-        <div className="list-container">
-          <div className="activite">Marketing</div>
-          <img src={`https://www.benouaiche.com/wp-content/uploads/2018/12/homme-medecine-chirurgie-esthetique-dr-benouaiche-paris.jpg`} alt="photo de profil" />
-          <div className="detail">
-            <h2>Léo Macaigne</h2>
-            <small>Âge: 21 ans</small> <br />
-            <small>Ville: Saint-Maur-des-Fossés</small> <br />
-            <small>Mail : leo.macaigne@gmail.com</small> <br />
-            <small>Tel : 06 95 16 86 61</small>
-          </div>
-          <div>
-            <button className="btn-load-more">Contacter</button>
-          </div>
-        </div>
-
-        <div className="list-container">
-          <div className="activite">Marketing</div>
-          <img src={`https://www.benouaiche.com/wp-content/uploads/2018/12/homme-medecine-chirurgie-esthetique-dr-benouaiche-paris.jpg`} alt="photo de profil" />
-          <div className="detail">
-            <h2>Léo Macaigne</h2>
-            <small>Âge: 21 ans</small> <br />
-            <small>Ville: Saint-Maur-des-Fossés</small> <br />
-            <small>Mail : leo.macaigne@gmail.com</small> <br />
-            <small>Tel : 06 95 16 86 61</small>
-          </div>
-          <div>
-            <button className="btn-load-more">Contacter</button>
-          </div>
-        </div>
+      <div className="input-field-container">
+        <input type="text" placeholder="Rechercher..." className="input-field-search" />
+        <select name="select1">
+          <option value="Nom">Nom</option>
+          <option value="Léo">Léo</option>
+          <option value="Pierre">Pierre</option>
+          <option value="Elisa">Elisa</option>
+        </select>
+        <select name="select2">
+          <option value="Categorie">Catégorie</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Design">Design</option>
+          <option value="Developpeur">Developpeur</option>
+        </select>
       </div>
+      {collaborators.map((collaborator) => (
+        <Card collaborator={collaborator} key={collaborator.id} />
+      ))}
     </div>
   );
 }
