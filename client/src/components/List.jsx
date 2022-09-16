@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
+import React, { useRef } from "react";
+
 import APIService from "../services/APIService";
 import Card from "./Card";
 import Navbar from "./navbar";
+import logo from "../img/logo.png";
 
 function List() {
   const [collaborators, setCollaborators] = useState([]);
@@ -15,23 +18,15 @@ function List() {
   useEffect(() => {
     getAllCollaborator();
   }, []);
+
   return (
     <div>
       <Navbar />
+      <div className="logo-list">
+        <img src={logo} alt="logo" />
+      </div>
       <div className="input-field-container">
         <input type="text" placeholder="Rechercher..." className="input-field-search" />
-        <select name="select1">
-          <option value="Nom">Nom</option>
-          <option value="Léo">Léo</option>
-          <option value="Pierre">Pierre</option>
-          <option value="Elisa">Elisa</option>
-        </select>
-        <select name="select2" className="select2">
-          <option value="Categorie">Catégorie</option>
-          <option value="Marketing">Marketing</option>
-          <option value="Design">Technique</option>
-          <option value="Developpeur">Client</option>
-        </select>
       </div>
       <div className="align-list">
         {collaborators.map((collaborator) => (

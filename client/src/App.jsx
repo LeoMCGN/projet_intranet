@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SayHello from "./components/SayHello";
 import List from "./components/List";
+import ModificationProfil from "./components/ModificationProfil";
 
 function setToken(userToken) {
   localStorage.setItem("token", JSON.stringify(userToken));
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/sayhello" element={<SayHello />} />
           <Route path="/list" element={<List />} />
+          <Route path="/modificationprofil" element={<ModificationProfil />} />
         </Routes>
       </BrowserRouter>
     </div>

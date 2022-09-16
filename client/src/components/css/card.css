@@ -48,7 +48,7 @@ h2 {
 
 .input-field-search {
   margin: 10px;
-  padding: 5px 20px;
+  padding: 7px 10%;
 }
 
 span {
@@ -63,6 +63,13 @@ span {
 select {
   margin: 2px;
   padding: 5px 20px;
+}
+
+.logo-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {

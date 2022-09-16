@@ -27,6 +27,11 @@ function Navbar() {
               Liste des salariés
             </Link>
           </li>
+          <li>
+            <Link to={"/modificationprofil/"} className="nav-link">
+              Mon profil
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

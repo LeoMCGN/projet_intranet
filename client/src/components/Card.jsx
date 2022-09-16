@@ -12,19 +12,19 @@ function Card({ collaborator }) {
         </h2>
         <div className="info">
           <small>
-            <span>Ville:</span> {collaborator.city}, {collaborator.country}
+            <span>Lieux de résidence:</span> {collaborator.city}, {collaborator.country}
           </small>
           <br />
           <small>
-            <span>Mail :</span> {collaborator.email}
+            <span>Adresse mail :</span> {collaborator.email}
           </small>{" "}
           <br />
           <small>
-            <span>Tel :</span> {collaborator.phone}
+            <span>Téléphone :</span> {collaborator.phone}
           </small>{" "}
           <br />
           <small>
-            <span>Anniversaire:</span> {collaborator.birthdate}
+            <span>Date d'anniversaire:</span> {collaborator.birthdate}
           </small>
         </div>
       </div>
