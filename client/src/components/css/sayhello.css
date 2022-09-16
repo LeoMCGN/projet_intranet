@@ -154,13 +154,17 @@
   color: rgb(0, 0, 0);
 }
 
-.center-btn {
+.btn-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.randomhello {
+.btn-random {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
   padding: 15px;
   margin: 2px;
   text-transform: uppercase;
@@ -174,7 +178,7 @@
   border-radius: 5px;
 }
 
-.randomhello:hover {
+.btn-random:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
   background: rgba(255, 255, 255, 0.4);
   color: rgba(0, 35, 122, 0.7);

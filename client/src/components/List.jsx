@@ -26,11 +26,11 @@ function List() {
           <option value="Pierre">Pierre</option>
           <option value="Elisa">Elisa</option>
         </select>
-        <select name="select2">
+        <select name="select2" className="select2">
           <option value="Categorie">Catégorie</option>
           <option value="Marketing">Marketing</option>
-          <option value="Design">Design</option>
-          <option value="Developpeur">Developpeur</option>
+          <option value="Design">Technique</option>
+          <option value="Developpeur">Client</option>
         </select>
       </div>
       {collaborators.map((collaborator) => (

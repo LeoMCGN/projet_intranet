@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./css/login.css";
-import Navbar from "./navbar";
 
 async function LoginUser(connexion) {
   let response = await fetch("http://localhost:7001/api/login", {

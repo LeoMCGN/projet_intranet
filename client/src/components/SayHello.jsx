@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import APIService from "../services/APIService";
+import "./css/sayhello.css";
 import Navbar from "./navbar";
 import Card from "./Card";
 
@@ -19,6 +20,11 @@ function SayHello() {
     <div>
       <Navbar />
       {randomCollaborator && <Card collaborator={randomCollaborator} />}
+      <div className="btn-center">
+        <button className="btn-random" onClick={getRandom}>
+          Dire bonjour à quelqu'un d'autre
+        </button>
+      </div>
     </div>
   );
 }

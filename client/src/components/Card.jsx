@@ -19,9 +19,6 @@ function Card({ collaborator }) {
           <small>Tel : {collaborator.phone}</small> <br />
           <small>Anniversaire: {collaborator.birthdate}</small>
         </div>
-        <div>
-          <button className="btn-load-more">Dire bonjour à quelqu'un d'autre</button>
-        </div>
       </div>
     </div>
   );
