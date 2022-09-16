@@ -33,9 +33,11 @@ function List() {
           <option value="Developpeur">Client</option>
         </select>
       </div>
-      {collaborators.map((collaborator) => (
-        <Card collaborator={collaborator} key={collaborator.id} />
-      ))}
+      <div className="align-list">
+        {collaborators.map((collaborator) => (
+          <Card collaborator={collaborator} key={collaborator.id} />
+        ))}
+      </div>
     </div>
   );
 }

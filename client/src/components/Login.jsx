@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./css/login.css";
+import logo from "../img/logo.png";
 
 async function LoginUser(connexion) {
   let response = await fetch("http://localhost:7001/api/login", {
@@ -34,7 +35,7 @@ function Login() {
       <section>
         <div className="title title-span">
           <h1>
-            Intranet Fruiteo
+            Intranet <img src={logo} alt="" />
             <span>Bienvenue sur la page de connexion</span>
           </h1>
         </div>
@@ -55,7 +56,7 @@ function Login() {
             <form onSubmit={submit} className="login-form">
               <input type="email" onChange={(e) => setUserName(e.target.value)} placeholder="Email" />
               <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="Mot de passe" className="input2" />
-              <button type="submit" className="btn">
+              <button type="submit" className="btn-login">
                 Se connecter
               </button>
               <p className="message">

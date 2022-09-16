@@ -14,7 +14,7 @@ function Navbar() {
         <ul>
           <li>
             <button onClick={Logout} className="nav-link">
-              Déconnexion{" "}
+              Déconnexion
             </button>
           </li>
           <li>
@@ -24,7 +24,7 @@ function Navbar() {
           </li>
           <li>
             <Link to={"/list/"} className="nav-link">
-              Liste des salariés{" "}
+              Liste des salariés
             </Link>
           </li>
         </ul>

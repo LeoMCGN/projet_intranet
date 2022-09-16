@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(90deg, rgba(141, 194, 111, 1) 0%, rgba(118, 184, 82, 1) 50%);
+  background: linear-gradient(90deg, #ff8c00 0%, #f4a03c 50%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -93,11 +93,11 @@ h1 em {
   margin-bottom: 15%;
 }
 
-.form .btn {
+.form .btn-login {
   text-transform: uppercase;
   text-decoration: none;
   outline: 0;
-  background: #4caf50;
+  background: #f4a03c;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -107,10 +107,11 @@ h1 em {
   transition: all 0.3 ease;
   cursor: pointer;
 }
-.form .btn:hover,
-.form .btn:active,
-.form .btn:focus {
-  background: #43a047;
+.form .btn-login:hover,
+.form .btn-login:active,
+.form .btn-login:focus {
+  background: #ff8c00;
+  transition: ease-in-out 0.2s;
 }
 .form .message {
   margin: 15px 0 0;
@@ -119,7 +120,7 @@ h1 em {
   font-size: 12px;
 }
 .form .message span {
-  color: #4caf50;
+  color: #ff8c00;
   text-decoration: none;
 }
 .form .register-form {

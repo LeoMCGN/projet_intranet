@@ -19,7 +19,7 @@ function SayHello() {
   return (
     <div>
       <Navbar />
-      {randomCollaborator && <Card collaborator={randomCollaborator} />}
+      <div className="align-list">{randomCollaborator && <Card collaborator={randomCollaborator} />}</div>
       <div className="btn-center">
         <button className="btn-random" onClick={getRandom}>
           Dire bonjour à quelqu'un d'autre
