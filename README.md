@@ -4,7 +4,7 @@ Bonjour et bienvenue sur le dernier projet d'école "Projet Intranet" <br>
 L'objectif est de réaliser un intranet sécurisé à l'aide d'une API et réunir tout les employés/clients au même endroit.
 
 ## Installation
-- ```**npm install**`````` dans le dossier "client" - Installer les dépendances front-web.
+- ```**npm install**``` dans le dossier "client" - Installer les dépendances front-web.
 - ```**npm install**``` dans le dossier "serveur-json" - Installer les dépendances back-end.
 
 ## Lancer les serveurs API et DEV
