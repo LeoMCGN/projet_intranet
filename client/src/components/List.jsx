@@ -25,9 +25,11 @@ function List() {
       <div className="logo-list">
         <img src={logo} alt="logo" />
       </div>
+      {/* 
       <div className="input-field-container">
         <input type="text" placeholder="Rechercher..." className="input-field-search" />
       </div>
+  */}
       <div className="align-list">
         {collaborators.map((collaborator) => (
           <Card collaborator={collaborator} key={collaborator.id} />
