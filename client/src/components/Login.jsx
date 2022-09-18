@@ -60,7 +60,7 @@ function Login() {
                 Se connecter
               </button>
               <p className="message">
-                Pas de compte? <span>Demander vos accès à la secrétaire.</span>
+                Pas de compte? <span>Demandez vos accès à la secrétaire.</span>
               </p>
             </form>
           </div>

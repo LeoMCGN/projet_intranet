@@ -12,7 +12,7 @@ function Card({ collaborator }) {
         </h2>
         <div className="info">
           <small>
-            <span>Lieux de résidence:</span> {collaborator.city}, {collaborator.country}
+            <span>Lieu de résidence:</span> {collaborator.city}, {collaborator.country}
           </small>
           <br />
           <small>
@@ -24,7 +24,7 @@ function Card({ collaborator }) {
           </small>{" "}
           <br />
           <small>
-            <span>Date d'anniversaire:</span> {collaborator.birthdate}
+            <span>Date de naissance :</span> {collaborator.birthdate}
           </small>
         </div>
       </div>

@@ -62,7 +62,7 @@ function ModificationProfil() {
             Modifier
           </button>
           <p className="message">
-            Merci de vérifier vos informations <span className="message-span"> avant de modifer votre profil.</span>
+            Merci de vérifier vos informations <span className="message-span"> avant de modifier votre profil.</span>
           </p>
         </form>
       </div>
